@@ -1,0 +1,179 @@
+nav{
+    background: hsl(270, 89%, 41%);
+    width: 100vw;
+    height: 5.3rem;
+    display: grid;
+    place-items: center;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 0 1rem 1.5rem hsla(270, 68%, 42%, 20%);
+    transition: all 500ms ease;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.nav_logo{
+    width: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.5rem;
+}
+nav a:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active{
+    background: #4db5ff;
+    color: #1f1f38;
+} */
+
+.nav_menu{
+    display: flex;
+    gap: 3.5rem;
+}
+.nav_menu li:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: 45%;
+  }
+  .nav_menu li:hover::after {
+    width: 3.8rem;
+    height: 1px;
+    background-color: #fff;
+  }
+.nav_menu a{
+    color: hsl(0, 5%, 100%);
+}
+#theme_icon{
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/***** change theme *****/
+
+/* .dark {
+    background-color: #333;
+    color: #fff;
+  }
+  .light {
+    background-color: #fff;
+    color: #333;
+  } */
+
+
+  .drop{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px ;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(190, 186, 186);
+    border-radius: 7px;
+    margin-left: 28cm;
+    margin-bottom: -4.5cm;
+    z-index: 9999999999999;
+  
+  }
+  
+  
+  .theme-options{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .theme-options div{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        margin: 2 10px;
+        border: 1px solid #fff;
+        display: inline-block;
+        opacity: 0.5;
+        &.active {
+            opacity: 1;
+        }
+      }
+        #theme-light{
+            background: hsl(270, 5%, 100%);
+        }
+        #theme-black{
+            background: hsl(0, 5%, 15%);
+        }
+        /* #theme-orange{
+            background: hsl(27, 87%, 56%);
+        }
+        #theme-green{
+            background: hsl(128, 81%, 65%);
+        } */
+  
+  
+
+/* hide nav menu in tablette and phones*/
+@media screen and (max-width:1024px) {
+    .nav_menu{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+
+      .nav > .nav_menu {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+      .nav > .nav_menu > li {
+        display: block;
+        width: 100%;
+      }
+    
+}

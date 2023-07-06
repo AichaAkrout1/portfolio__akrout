@@ -1,0 +1,96 @@
+.container.contact_container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin-top: 1rem;
+}
+.contact_options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact_option{
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    background: hsl(0, 5%, 100%);
+    border:2px solid transparent;
+    border-radius: 1.2rem;
+    text-align: center;
+    transition: all 500ms ease;
+}
+.contact_option:hover {
+    background: transparent;
+    border-color: hsl(0, 5%, 100%);
+    color: hsl(270, 5%, 15%);
+    transform: translateX(-1rem);
+}
+/* .contact_option h4, h5{
+    color: hsl(0, 5%, 94%);
+} */
+.contact_option-icon{
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: hsl(270, 89%, 41%);
+}
+.contact_option a {
+    color: hsl(270, 89%, 41%);
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/******************** form ******************/
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input::placeholder{
+    color: hsl(270, 5%, 15%);
+    
+}
+input , textarea{
+    width: 100%;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    background:  hsl(0, 5%, 100%);
+    color:hsl(270, 5%, 15%);
+    border: 2px solid hsl(270, 89%, 41%);
+    resize: none;
+    transition: all 500ms ease;
+}
+input:hover{
+    transform: translateY(-0.5rem);
+}
+textarea:hover{
+    transform: translateY(-0.5rem);
+}
+textarea::placeholder{
+    color: hsl(270, 5%, 15%);
+}
+.dropup{
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    color: hsl(270, 89%, 41%);
+    font-size: 4.5rem;
+    margin-top: 3rem;
+    
+}
+
+/* ===========Media Queries(Medium devices)============ */
+@media screen and (max-width: 1024px) {
+    .container.contact_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+  }
+  /* ===========Media Queries(Small devices)============ */
+  @media screen and (max-width: 600px) {
+     .container.contact_container {
+        width: 90%;
+     }
+  }

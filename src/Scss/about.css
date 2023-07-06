@@ -1,0 +1,111 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 40% 70%;
+    gap: 5%;
+}
+.about_portrait{
+    width: 100%;
+    height: fit-content;
+    max-height: 50rem;
+    border:1rem solid hsl(0, 5%, 100%);
+    transition: all 500ms ease;
+}
+/* .about-me-image{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: all 400ms ease;
+} */
+.about_portrait:hover{
+    border-width: 0;
+}
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0 1.5rem;
+}
+.card.about_card{
+    text-align: center;
+}
+.about-card-icon{
+    color: hsl(270, 5%, 15%);
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    transition: all 500ms ease;
+}
+.card.about_card:hover .about-card-icon{
+    background: hsl(270, 89%, 41%);
+    color: hsl(0, 5%, 100%);
+}
+.card.about_card h5{
+    margin: 0.9rem;
+}
+.about_right p{
+    margin-bottom: 0.8rem;
+}
+.about_right .btn{
+    margin-top: 2.5rem;
+}
+
+
+/* media queries phones*/
+
+/* @media screen and (max-width:1024px) {
+    .about_cards{
+        display: block;
+    }
+    .about_right .btn{
+        margin-top: 2rem;
+    }
+    .about_portrait{
+        margin-top: 16rem;
+    }
+} */
+
+@media screen and (max-width: 1024px) {
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about_left {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about_right p {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+/* ===========Media Queries(Small devices)============ */
+@media screen and (max-width: 600px) {
+    .about_left {
+        width: 65%;
+        margin: 0 auto ;
+    }
+
+    .about_cards {
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+    }
+
+    .about_right {
+        margin: 0 auto;
+    }
+
+    .about_right p {
+        margin: 1.5rem 0;
+        font-size: 0.8rem;
+    }
+    .about_right h2{
+        margin-top: -12rem;
+    }
+
+}

@@ -1,0 +1,68 @@
+.contenair{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    width: 50%;
+    height: 4 00px;
+}
+.cards{
+    width: 70px;
+    height:70px;
+    margin: 20px;
+    padding: 1.1rem;
+    border-radius: 50%;
+    box-shadow: -1px 0px 3px 3px hsl(270, 89%, 41%);
+    transition: transform 0.25s ease;
+    
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+.cards img{
+    max-width: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    cursor: pointer;
+    margin-left: -0.5rem;
+    margin-top: -7px;
+    border-radius: 50%;
+}
+.cards h4{
+    color: hsl(270, 5%, 15%);
+    text-align: center;
+    margin-top: 1.3rem;
+    font-size: 0.6rem;
+
+}
+.cards h4:hover{
+    color: hsl(270, 89%, 41%);
+    cursor: pointer;
+}
+/* ===========Media Queries(Medium devices)============ */
+@media screen and (max-width: 1024px) {
+   
+    .contenair > div {
+        width: 28%;
+        padding: 1rem;
+        margin: 10px auto; 
+    } .cards{
+        width: 50%;
+    }
+
+  }
+  /* ===========Media Queries(Small devices)============ */
+  @media screen and (max-width: 600px) {
+    .experience_container{
+        gap: 1rem;
+    }
+    .experience_container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+   .cards h4{
+    margin-top: 1rem;
+   }
+  }
