@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio__akrout/static/css/main.fd10b23e.css",
+    "main.js": "/portfolio__akrout/static/js/main.28d61698.js",
+    "static/js/787.1d595911.chunk.js": "/portfolio__akrout/static/js/787.1d595911.chunk.js",
+    "static/media/My project-1.png": "/portfolio__akrout/static/media/My project-1.149a9c7b4730d3628e2b.png",
+    "static/media/My project-2.png": "/portfolio__akrout/static/media/My project-2.9b7bed710e64d873b54b.png",
+    "static/media/My project-3.png": "/portfolio__akrout/static/media/My project-3.43602002bf5a440595b3.png",
+    "static/media/about-me.png": "/portfolio__akrout/static/media/about-me.cbb423824fdf32d3ffc7.png",
+    "static/media/emoji3.png": "/portfolio__akrout/static/media/emoji3.f65c5457fb6bd11fa22a.png",
+    "static/media/logo.png": "/portfolio__akrout/static/media/logo.f8af41b28dfc121a016e.png",
+    "static/media/aicha.jpg": "/portfolio__akrout/static/media/aicha.c7d3c3f68138dbd2c06a.jpg",
+    "static/media/cv.pdf": "/portfolio__akrout/static/media/cv.2a3816e5c172145e5b9c.pdf",
+    "static/media/emoji.jpg": "/portfolio__akrout/static/media/emoji.df80cf37d19d9da4ed52.jpg",
+    "index.html": "/portfolio__akrout/index.html",
+    "main.fd10b23e.css.map": "/portfolio__akrout/static/css/main.fd10b23e.css.map",
+    "main.28d61698.js.map": "/portfolio__akrout/static/js/main.28d61698.js.map",
+    "787.1d595911.chunk.js.map": "/portfolio__akrout/static/js/787.1d595911.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd10b23e.css",
+    "static/js/main.28d61698.js"
+  ]
+}
